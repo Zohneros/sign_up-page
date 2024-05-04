@@ -1,8 +1,3 @@
-/* 
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/JavaScript.js to edit this template
- */
-
 const form = document.getElementById('form');
 
 const fields = {
@@ -70,15 +65,18 @@ form.addEventListener('submit', (e) => {
         const value = field.element.value.trim();
 
         if (field.check && !value.match(field.check)) {
-            field.errorElement.textContent = field.errorMessage;
             isValid = false;
+            field.errorElement.textContent = field.errorMessage;
+            field.errorElement.classList.add('error-active'); // Show error message
         } else {
             field.errorElement.textContent = '';
+            field.errorElement.classList.remove('error-active'); // Hide error message
         }
 
         if (fieldName === 'confirm' && value !== fields.password.element.value.trim()) {
-            field.errorElement.textContent = field.errorMessage;
             isValid = false;
+            field.errorElement.textContent = field.errorMessage;
+            field.errorElement.classList.add('error-active'); // Show error message
         }
     }
 

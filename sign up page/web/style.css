@@ -65,9 +65,14 @@ body{
         
     }    
     
-    .signup span{
-        color: red;
-        font-size: 15px;
-    }
+   
+    
+    .error-active {
+    display: block;
+    border-color: #ff0000;
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
     
     

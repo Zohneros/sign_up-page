@@ -19,7 +19,7 @@
         <div class="signup">
             <h1>Sign Up</h1>
             <form id="form">
-                <label>Username</label>
+                <label>Usernssame</label>
                 <input type="text" id="username" placeholder="">
                 <span  id="username_error"></span>
                 <label>Password</label>
@@ -41,7 +41,7 @@
                 <input type="text" id="address" placeholder="">
                 <span  id="address_error"></span>
                 <label>Birthday</label>
-                <input type="date" placeholder="">
+                <input type="date" id="bday" placeholder="">
                 <span  id="bday_error"></span>
                 <label>Mobile</label>
                 <input type="text" id="mobile" placeholder="">
